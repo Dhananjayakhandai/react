@@ -3,16 +3,27 @@ import './App.css'
 let count = 0;
 // const data = useState //( useState takes initial value as a parameter)
 function App({ root }) {
+<<<<<<< HEAD
   console.log("rendering")
   // const data = useState(100) //([state, useState] useState takes initial value as a parameter)
   // console.log('data:-', data[0])
 
   const [counter, setCounter] = useState(100)
+=======
+  // const data = useState(100) //( useState takes initial value as a parameter)
+  // console.log('data:-', data[0])
+
+const  [counter, setCounter] = useState(100)
+>>>>>>> e76bfcb (useState of hook in react)
 
   const increaseValue = (e) => {
     // const  data = useState("sai")
     console.log("increase button click")
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> e76bfcb (useState of hook in react)
     // count++
     // console.log(count)
     // root.render(<App root={root} />)
@@ -32,6 +43,7 @@ function App({ root }) {
     console.log("decrease button click")
     setCounter(counter - 1)
     console.log(counter)
+<<<<<<< HEAD
 
     //   setCounter(4)
     //   setCounter(counter + 1)
@@ -67,6 +79,11 @@ function App({ root }) {
   //   setCounter(prev => prev + 3);
 
   // };
+=======
+  }
+
+  
+>>>>>>> e76bfcb (useState of hook in react)
   return (
     <>
       <h1>Counter App</h1>
@@ -76,8 +93,13 @@ function App({ root }) {
       <button >{counter}</button>
       <br /><br />
       <button onClick={decreaseValue}>Decreases</button>
+<<<<<<< HEAD
       <br /><br />
       {/* <button onClick={increaseValue3}>Increase by 3</button> */}
+=======
+
+
+>>>>>>> e76bfcb (useState of hook in react)
     </>
   )
 }
