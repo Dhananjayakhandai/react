@@ -39,20 +39,24 @@ function App({ root }) {
     //   setCounter(counter + 1)
     //   setCounter(counter + 1)
 
-    setCounter((prevState)=>{
-      console.log("1st prevState is :", prevState)
-      return prevState + 1;
-    })
+    // setCounter((prevState)=>{
+    //   console.log("1st prevState is :", prevState)
+    //   return prevState + 1;
+    // })
 
-    setCounter((prevState)=>{
-      console.log(" 2nd prevState is :", prevState)
-      return prevState + 1;
-    })
+    // setCounter((prevState)=>{
+    //   console.log(" 2nd prevState is :", prevState)
+    //   return prevState + 1;
+    // })
 
-    setCounter((prevState)=>{
-      console.log(" 3rd prevState is :", prevState)
-      return prevState + 1;
-    })
+    // setCounter((prevState)=>{
+    //   console.log(" 3rd prevState is :", prevState)
+    //   return prevState + 1;
+    // })
+
+    setCounter(prevState => prevState + 1)
+    setCounter(prevState => prevState + 1)
+    setCounter(prevState => prevState + 1)
   }
 
 
