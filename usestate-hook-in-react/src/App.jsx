@@ -57,9 +57,16 @@ function App({ root }) {
     setCounter(prevState => prevState + 1)
     setCounter(prevState => prevState + 1)
     setCounter(prevState => prevState + 1)
+    
   }
 
+  // const increaseValue3 = () => {
+  //   console.log("increase button click");          
+  //   setCounter(prev => prev + 3);
 
+  //   setCounter(prev => prev + 3);
+
+  // };
   return (
     <>
       <h1>Counter App</h1>
@@ -69,8 +76,8 @@ function App({ root }) {
       <button >{counter}</button>
       <br /><br />
       <button onClick={decreaseValue}>Decreases</button>
-
-
+      <br /><br />
+      {/* <button onClick={increaseValue3}>Increase by 3</button> */}
     </>
   )
 }
