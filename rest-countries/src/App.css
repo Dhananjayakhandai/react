@@ -9,11 +9,14 @@ body {
     --elements-color: white;
     margin: 0;
     font-family: Nunito, sans-serif;
+}
+
+main, header {
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-body.dark {
+main.dark, header.dark {
     --background-color: hsl(207, 26%, 17%); 
     --text-color: white;
     --elements-color: hsl(209, 23%, 22%);
@@ -21,6 +24,7 @@ body.dark {
 
 main {
     padding: 24px;
+    min-height: calc(100vh - 73px);
 }
 
 a {
@@ -32,6 +36,9 @@ a {
     box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
     padding-inline: 24px;
     background-color: var(--elements-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .header-content {
@@ -50,19 +57,17 @@ a {
     cursor: pointer;
 }
 
-.ntries-containercou {
+.countries-container {
     max-width: 1200px;
     margin-top: 16px;
-    display: flex;
-    gap: 64px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
     margin-inline: auto;
-    justify-content: space-between;
 }
 
 .country-card {
     display: inline-block;
-    width: 250px;
     border-radius: 8px;
     overflow: hidden;
     padding-bottom: 24px;
@@ -70,6 +75,18 @@ a {
     transition: all 0.2s ease-in-out;
     background-color: var(--elements-color);
 }
+
+.flag-container {
+    height: 160px;
+    overflow: hidden;
+}
+
+.country-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .country-card:hover {
     transform: scale(1.03);
@@ -88,11 +105,6 @@ a {
 .card-text p {
     margin-block: 8px;
 }
-
-.country-card img {
-    width: 100%;
-}
-
 
 .search-filter-container {
     max-width: 1200px;
@@ -158,6 +170,3 @@ a {
     }
     
 }
-
-
-/* ==================== App.css (UPTO 160 line)========================== */

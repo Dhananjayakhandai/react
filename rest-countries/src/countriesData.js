@@ -1,4 +1,7 @@
-[
+const countriesData = [
+
+
+// [
   {
     "flags": {
       "png": "https://flagcdn.com/w320/tn.png",
@@ -6136,3 +6139,4 @@
     "population": 300
   }
 ]
+export default countriesData

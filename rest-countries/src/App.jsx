@@ -1,4 +1,4 @@
-import Header from   './components/Header.jsx'
+import Header from './components/Header.jsx'
 import './App.css'
 import SearchBar from './components/SearchBar.jsx'
 import SelectMenu from './components/SelectMenu.jsx'
@@ -9,15 +9,13 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <div className='search-filter-container'>
-      <SearchBar />
-      <SelectMenu />
-
-
-      </div>
-      <CountriesList/>
+          <SearchBar />
+          <SelectMenu />
+        </div>
+        <CountriesList />
       </main>
     </>
   )
