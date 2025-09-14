@@ -8,15 +8,19 @@ import { useState } from 'react'
 function App() {
 
   const [query, setQuery] = useState('')
+
   return (
     <>
+    
       <Header />
       <main>
         <div className='search-filter-container'>
           <SearchBar setQuery={setQuery} />
           <SelectMenu />
         </div>
-        <CountriesList query={query} />
+        {query === 'unamount' ? "component is hidden": "component is visible"}
+        <br/>
+        {query !=='unmount' && <CountriesList query={query} />}
       </main>
     </>
   )
