@@ -6,21 +6,20 @@ import CountriesList from './components/CountriesList.jsx'
 import { useState } from 'react'
 
 function App() {
-
   const [query, setQuery] = useState('')
-
+  
   return (
     <>
-    
       <Header />
       <main>
         <div className='search-filter-container'>
           <SearchBar setQuery={setQuery} />
           <SelectMenu />
         </div>
-        {query === 'unamount' ? "component is hidden": "component is visible"}
-        <br/>
-        {query !=='unmount' && <CountriesList query={query} />}
+
+        {query === 'unmount' ? "Component is hidden" : "Component is visible"}
+        <br />
+        {query !== 'unmount' && <CountriesList query={query} />}
       </main>
     </>
   )
